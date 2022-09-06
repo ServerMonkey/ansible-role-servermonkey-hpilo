@@ -1,0 +1,6 @@
+---
+#info: Show the servers current power consumtion configuration
+- include_role: name=servermonkey.hpilo_runner
+  vars:
+    hpilo_script: Get_Host_Power_Saver.xml
+    hpilo_find: "HOST_POWER_SAVER="

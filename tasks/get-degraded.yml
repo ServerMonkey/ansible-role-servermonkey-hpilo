@@ -1,0 +1,6 @@
+---
+#info: Find only errors marked 'degraded'
+- include_role: name=servermonkey.hpilo_runner
+  vars:
+    hpilo_script: Get_EmHealth.xml
+    hpilo_find: "degraded"

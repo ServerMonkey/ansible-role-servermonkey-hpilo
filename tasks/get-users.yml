@@ -1,0 +1,6 @@
+---
+#info: List all iLO user accounts
+- include_role: name=servermonkey.hpilo_runner
+  vars:
+    hpilo_script: Get_All_User_Info.xml
+    hpilo_find: "USER_NAME="

@@ -1,0 +1,6 @@
+---
+#info: Show the servers power supply errors
+- include_role: name=servermonkey.hpilo_runner
+  vars:
+    hpilo_script: Get_IML.xml
+    hpilo_find: "System Power Fault Detected"

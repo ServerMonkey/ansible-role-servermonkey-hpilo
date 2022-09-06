@@ -1,0 +1,7 @@
+---
+#info: Reset/restart the iLO firmware/chipset
+- include_role: name=servermonkey.hpilo_runner
+  vars:
+    hpilo_script: Reset_RIB.xml
+    hpilo_find: "MESSAGE="
+    hpilo_uniq: -q

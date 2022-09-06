@@ -1,0 +1,5 @@
+---
+#info: Turn off the blue indicator/maintenance LED on HP servers
+- include_role: name=servermonkey.hpilo_runner
+  vars:
+    hpilo_script: UID_Control_off.xml

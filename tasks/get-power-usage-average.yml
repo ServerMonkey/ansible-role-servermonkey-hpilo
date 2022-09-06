@@ -1,0 +1,6 @@
+---
+#info: Show the servers average power consumption
+- include_role: name=servermonkey.hpilo_runner
+  vars:
+    hpilo_script: Get_Power_Readings.xml
+    hpilo_find: "AVERAGE_POWER_READING"

@@ -1,0 +1,6 @@
+---
+#info: Show the servers firmware version
+- include_role: name=servermonkey.hpilo_runner
+  vars:
+    hpilo_script: Get_FW_Version.xml
+    hpilo_find: "FIRMWARE_VERSION"

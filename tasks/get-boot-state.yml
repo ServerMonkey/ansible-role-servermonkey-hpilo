@@ -1,0 +1,6 @@
+---
+#info: Show systems power/boot status, e.g. on or off
+- include_role: name=servermonkey.hpilo_runner
+  vars:
+    hpilo_script: Get_Host_Power.xml
+    hpilo_find: "HOST_POWER="

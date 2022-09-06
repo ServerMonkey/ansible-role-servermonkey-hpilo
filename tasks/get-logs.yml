@@ -1,0 +1,5 @@
+---
+#info: Show all IML logs
+- include_role: name=servermonkey.hpilo_runner
+  vars:
+    hpilo_script: Get_IML.xml

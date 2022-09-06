@@ -1,0 +1,6 @@
+---
+#info: Show the iLO license status
+- include_role: name=servermonkey.hpilo_runner
+  vars:
+    hpilo_script: Get_All_Licenses.xml
+    hpilo_find: "LICENSE_TYPE"
