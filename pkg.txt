@@ -1,0 +1,4 @@
+Version: 0.11
+Ansible-Section: role-tasks
+Depends: ansible-role-servermonkey-hpilo-runner
+Description: Manage and monitor HPiLO capable devices
